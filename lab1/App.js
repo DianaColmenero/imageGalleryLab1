@@ -7,24 +7,27 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View, Image, SafeAreaView } from 'react-native';
+import ImagePlaceholder from 'react-native-image-with-placeholder'
+// import themarias2 from './themarias2.jpg';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+// const hdUrlSolitude = `https://static1.squarespace.com/static/572acd717c65e426e2b580d9/t/5b467f2d758d46a136f18dbd/1531346739681/themarias.jpg`;
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+
+        <View style={styles.container}>
+        <Text style={styles.welcome}>Welcome to React Native!
+        </Text>
+        <Text style={styles.instructions}>how to build an image gallery!
+        </Text>
+        <Image source={{uri:'https://s3.amazonaws.com/crisoforo.com/flowers.jpg'}} 
+          style={styles.image}
+        />
       </View>
+      
+      
     );
   }
 }
@@ -46,4 +49,11 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  image: {
+    width: 170, 
+    height: 170
+  },
+
 });
+
+
