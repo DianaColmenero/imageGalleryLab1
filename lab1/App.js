@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {StyleSheet, View, Image, SafeAreaView } from 'react-native';
+import {StyleSheet, View, Image, SafeAreaView, Text } from 'react-native';
 import ImagePlaceholder from 'react-native-image-with-placeholder'
 // import themarias2 from './themarias2.jpg';
 
