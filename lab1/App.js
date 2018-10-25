@@ -16,18 +16,13 @@ import ImagePlaceholder from 'react-native-image-with-placeholder'
 export default class App extends Component {
   render() {
     return (
-
-        <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>how to build an image gallery!
-        </Text>
-        <Image source={{uri:'https://s3.amazonaws.com/crisoforo.com/flowers.jpg'}} 
-          style={styles.image}
-        />
+      <View style={styles.container}>
+        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.instructions}>how to build an image gallery!</Text>
+        <Image 
+          source={{uri:'https://s3.amazonaws.com/crisoforo.com/flowers.jpg'}} 
+          style={styles.image} />
       </View>
-      
-      
     );
   }
 }
@@ -52,8 +47,7 @@ const styles = StyleSheet.create({
   image: {
     width: 170, 
     height: 170
-  },
-
+  }
 });
 
 
